@@ -146,3 +146,10 @@ pre {
      gap: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .install-code {
+    flex-direction: column;
+    gap: var(--feature-spacing);
+  }
+}
