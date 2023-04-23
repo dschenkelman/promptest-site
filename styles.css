@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #83a4d4, #b6fbff);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 18px;
+  text-align: center;
+  color: #555;
+}
+
+.install-code {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.usage-features {
+  display: flex;
+  align-items: stretch;
+}
+
+.usage {
+  width: 75%;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.usage img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-caption {
+  color: #555;
+  font-size: 13px;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.features {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.feature {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Horizontally center the titles */
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+pre {
+    margin-top: 0;
+}
+
+.installation pre {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.installation a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.installation a:hover {
+  text-decoration: underline;
+}
+
+.code-content {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.feature h3 {
+  color: #333;
+}
+
+.feature p {
+  color: #555;
+}
+
+.install-row,
+.code-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Add this at the end of your CSS */
+@media (max-width: 1024px) {
+  .usage-features {
+    flex-direction: column;
+  }
+
+  .usage {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .features {
+    width: 100%;
+     gap: 20px;
+  }
+}
